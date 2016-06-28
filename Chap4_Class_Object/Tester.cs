@@ -241,7 +241,20 @@ namespace Chap4_Class_Object
             Console.WriteLine("Chu vi duong tron: {0:F2}", dt2.ChuVi());
             Console.WriteLine("Dien tich duong tron: {0:F2}", dt2.DienTich());
 
-
+            // Bai tap phuong trinh bac 2
+            Console.WriteLine();
+            PTBac2 pt1 = new PTBac2(1, -2, 1);
+            bool KtCoNghiem = pt1.TinhNghiem();
+            if (KtCoNghiem == false)
+            {
+                Console.WriteLine("PT vo nghiem");
+            }
+            else
+            {
+                Console.WriteLine("PT co nghiem x1 = {0:F2}", pt1.X1);
+                Console.WriteLine("PT co nghiem x2 = {0:F2}", pt1.X2);
+            }
+            
             // 
 
             Console.ReadLine();
