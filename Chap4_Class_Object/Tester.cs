@@ -230,9 +230,20 @@ namespace Chap4_Class_Object
             Cat miu = new Cat();
             Cat.HowManyCats();
 
-            // su dung using
+            // bai tap duong tron
             Console.WriteLine();
-            
+            DuongTron dt = new DuongTron(4, new Point(2, 3));
+            Console.WriteLine("Chu vi duong tron: {0:F2}", dt.ChuVi());
+            Console.WriteLine("Dien tich duong tron: {0:F2}", dt.DienTich());
+
+            DuongTron dt2 = new DuongTron(6, new Point(3, 5));
+            dt2.BanKinh = 4;
+            Console.WriteLine("Chu vi duong tron: {0:F2}", dt2.ChuVi());
+            Console.WriteLine("Dien tich duong tron: {0:F2}", dt2.DienTich());
+
+
+            // 
+
             Console.ReadLine();
         }
     }
